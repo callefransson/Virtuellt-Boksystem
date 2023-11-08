@@ -12,9 +12,9 @@ namespace Virtuellt_Boksystem
         public string Author { get; set; }
         public int ISBN { get; set; }
 
-        public void PrintInfo()
+        public virtual void PrintInfo()
         {
-
+            Console.WriteLine("hejsan");
         }
     }
 }
