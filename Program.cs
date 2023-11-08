@@ -6,7 +6,13 @@ namespace Virtuellt_Boksystem
     {
         static void Main(string[] args)
         {
-            list<Media> = medialist = new List<Media>
+            List<Media> mediaItems = new List<Media>();
+            {
+                new Book("Hur github funkar!", "Malin", 1);
+                new Ebook("Hur github inte funkar!", "Malin",2,50,"www.github.com");
+            }
+
+            
         }
     }
 }
