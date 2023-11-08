@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Virtuellt_Boksystem
 {
-    internal class Book
+    internal class Book :IBookCanBeBorrowed
     {
         public string Title { get; set; }
         public string Author { get; set; }
