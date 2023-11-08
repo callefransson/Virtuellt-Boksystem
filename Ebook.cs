@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Virtuellt_Boksystem
 {
-    public class Ebook : Book
+    internal class Ebook : Book
     {
         public int FileSize { get; set; }
         public string DownloadUrl { get; set; }
