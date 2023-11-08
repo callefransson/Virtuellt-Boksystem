@@ -13,7 +13,7 @@ namespace Virtuellt_Boksystem
         public int FileSize { get; set; }
         public string DownloadUrl { get; set; }
 
-        public Ebook(string title, string author, string isbn, int filesize, string downloadurl) 
+        public Ebook(string title, string author, int iSBN, int filesize, string downloadurl) : base(title, author, iSBN)
         {
             FileSize = filesize;
             DownloadUrl = downloadurl;
