@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Headers;
+﻿using System;
+using System.Net.Http.Headers;
 
 namespace Virtuellt_Boksystem
 {
@@ -12,7 +13,10 @@ namespace Virtuellt_Boksystem
                 new Ebook("Hur github inte funkar!", "Malin",2,50,"www.github.com");
             }
 
-            
+            foreach (var item in mediaItems)
+            {
+                item.ShowInfo();
+            }
         }
     }
 }
