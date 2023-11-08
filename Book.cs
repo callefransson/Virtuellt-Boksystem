@@ -14,7 +14,7 @@ namespace Virtuellt_Boksystem
 
         public void PrintInfo()
         {
-
+            Console.WriteLine("hejsan");
         }
     }
 }
