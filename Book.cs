@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Virtuellt_Boksystem
 {
-    internal class Book :IBookCanBeBorrowed
+    internal class Book : Media, IBookCanBeBorrowed
     {
         public string Title { get; set; }
         public string Author { get; set; }
@@ -22,6 +22,16 @@ namespace Virtuellt_Boksystem
         public virtual void PrintInfo()
         {
             Console.WriteLine("hejsan");
+        }
+
+        public override void ShowInfo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Play()
+        {
+            throw new NotImplementedException();
         }
     }
 }
