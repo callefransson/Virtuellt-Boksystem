@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Virtuellt_Boksystem
 {
-    public class IBookCanBeBorrowed
+    public interface IBookCanBeBorrowed
     {
         public void LendABook()
         {
-            Console.WriteLine("you have lenmd a book");
+            Console.WriteLine("you have lend a book");
         }
 
         public void ReturnAbook()
         {
-            Console.WriteLine("you have return a book");
+            Console.WriteLine("you have returned a book");
         }
     }
 }
