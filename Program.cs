@@ -1,10 +1,12 @@
-﻿namespace Virtuellt_Boksystem
+﻿using System.Net.Http.Headers;
+
+namespace Virtuellt_Boksystem
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            list<Media> = medialist = new List<Media>
         }
     }
 }
