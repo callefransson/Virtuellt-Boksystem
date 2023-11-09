@@ -8,14 +8,7 @@ namespace Virtuellt_Boksystem
 {
     public interface IBookCanBeBorrowed
     {
-        public void LendABook()
-        {
-            Console.WriteLine("you have lend a book");
-        }
-
-        public void ReturnAbook()
-        {
-            Console.WriteLine("you have returned a book");
-        }
+        public void LendABook();
+        public void ReturnABook();
     }
 }
