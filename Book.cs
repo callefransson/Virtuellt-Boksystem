@@ -6,11 +6,6 @@ using System.Threading.Tasks;
 
 namespace Virtuellt_Boksystem
 {
-    interface IBookCanBeBorrowed
-    {
-        void LendABook();
-        void ReturnABook();
-    }
     internal class Book : Media, IBookCanBeBorrowed
     {
         public string Title { get; set; }
