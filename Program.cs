@@ -7,15 +7,14 @@ namespace Virtuellt_Boksystem
     {
         static void Main(string[] args)
         {
-            List<Media> mediaItems = new List<Media>();
-            {
-                new Book("Hur github funkar!", "Malin", 1);
-                new Ebook("Hur github inte funkar!", "Malin",2,50,"www.github.com");
-            }
+            List<Book> mediaItems = new List<Book>();
+
+            mediaItems.Add(new Book("Hur github funkar!", "Malin", 1));
+            mediaItems.Add(new Ebook("Hur github inte funkar!", "Malin", 2, 50, "www.github.com"));
 
             foreach (var item in mediaItems)
             {
-                item.ShowInfo();
+                item.PrintInfo();
             }
         }
     }
