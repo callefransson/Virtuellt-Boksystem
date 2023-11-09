@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Virtuellt_Boksystem
 {
+    interface IBookCanBeBorrowed
+    {
+        void LendABook();
+        void ReturnABook();
+    }
     internal class Book : Media, IBookCanBeBorrowed
     {
         public string Title { get; set; }
@@ -19,19 +24,27 @@ namespace Virtuellt_Boksystem
             ISBN = iSBN;
         }
 
+        public void LendABook()
+        {
+            Console.WriteLine("you have lend a book");
+        }
+        public void ReturnABook()
+        {
+            Console.WriteLine("you have returned a book");
+        }
         public virtual void PrintInfo()
         {
-            Console.WriteLine("hejsan");
+            Console.WriteLine("Name of the book: {0} The author: {1} ISBN: {2}",Title,Author,ISBN);
         }
 
         public override void ShowInfo()
         {
-            throw new NotImplementedException();
+            PrintInfo();
         }
 
         public override void Play()
         {
-            throw new NotImplementedException();
-        }
+            
+        }       
     }
 }
